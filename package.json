@@ -1,0 +1,60 @@
+{
+  "name": "zenith-neon",
+  "displayName": "Zenith Neon",
+  "description": "Neon cyber-zen dark theme: 15 distinct code colours, WCAG AAA contrast on every colour, tested for colour blindness.",
+  "version": "1.0.0",
+  "publisher": "mertfurkandgn",
+  "author": "mertfurkandgn",
+  "license": "MIT",
+  "icon": "images/icon.png",
+  "galleryBanner": {
+    "color": "#0B0D18",
+    "theme": "dark"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mertfurkandgn/zenith-neon.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mertfurkandgn/zenith-neon/issues"
+  },
+  "homepage": "https://github.com/mertfurkandgn/zenith-neon#readme",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "dark theme",
+    "color theme",
+    "neon",
+    "cyberpunk",
+    "tokyo",
+    "zen",
+    "accessible",
+    "accessibility",
+    "high contrast",
+    "wcag",
+    "color blind",
+    "colorblind",
+    "semantic highlighting"
+  ],
+  "files": [
+    "themes",
+    "images/icon.png",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Zenith Neon",
+        "uiTheme": "vs-dark",
+        "path": "./themes/zenith-neon.json"
+      }
+    ]
+  }
+}
