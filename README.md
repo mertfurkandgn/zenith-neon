@@ -55,14 +55,17 @@ Works in VS Code, Cursor, VSCodium and other editors compatible with VS Code.
 ```jsonc
 {
   "editor.fontFamily": "'JetBrains Mono', Consolas, monospace",
-  "editor.fontSize": 15,
-  "editor.lineHeight": 1.5,
-  "editor.letterSpacing": 0.3,
-  "editor.semanticHighlighting.enabled": true
+  "editor.fontSize": 14,
+  "editor.lineHeight": 1.4,
+  "editor.letterSpacing": 0,
+  "editor.semanticHighlighting.enabled": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.stickyScroll.enabled": true
 }
 ```
 
-The screenshots use exactly these settings with [JetBrains Mono](https://www.jetbrains.com/lp/mono/). A line height of 1.5 is the spacing WCAG 1.4.12 asks text to support, and slightly wider letter spacing has been shown to help reading, especially for readers with dyslexia (Zorzi et al., 2012).
+The screenshots use exactly these settings with [JetBrains Mono](https://www.jetbrains.com/lp/mono/). Keep `editor.letterSpacing` at `0`: fractional values make selection boxes and the cursor drift away from the text on Windows at 125 % display scaling. Sticky scroll pins the enclosing function or block to the top of the editor, and the theme styles it so the current scope is always visible.
 
 ## Research basis
 
@@ -89,7 +92,6 @@ Zenith Neon is built on what studies actually show, including where they disagre
 - Piepenbrock, C., Mayr, S., & Buchner, A. (2014). Smaller pupil size and better proofreading performance with positive than with negative polarity displays. *Ergonomics*, 57(11). https://doi.org/10.1080/00140139.2014.948496
 - Sarkar, A. (2015). The impact of syntax colouring on program comprehension. *PPIG 2015*. https://ppig.org/files/2015-PPIG-26th-Sarkar1.pdf
 - Steele, K. M. (2014). Failure to replicate the Mehta and Zhu (2009) color-priming effect on anagram solution times. *Psychonomic Bulletin & Review*, 21. https://doi.org/10.3758/s13423-013-0548-3
-- Zorzi, M., et al. (2012). Extra-large letter spacing improves reading in dyslexia. *PNAS*, 109(28). https://doi.org/10.1073/pnas.1205566109
 - W3C (2023). Web Content Accessibility Guidelines 2.2, Success Criterion 1.4.6 Contrast (Enhanced). https://www.w3.org/TR/WCAG22/#contrast-enhanced
 
 ## License
